@@ -241,6 +241,24 @@ input, select, textarea {
 
 /* Row */
 
+	.img2 {
+	    float: left;
+	    width:  100px;
+	    height: 150px;
+	    background-size: cover;
+	}
+
+	.img3 {
+	    float: left;
+	    width:  120px;
+	    height: 150px;
+	    background-size: cover;
+	}
+
+	.circular--square {
+	  border-radius: 50%;
+	}
+
 	.row {
 		display: flex;
 		flex-wrap: wrap;
