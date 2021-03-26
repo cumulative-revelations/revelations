@@ -2110,6 +2110,20 @@ input, select, textarea {
 				width: 50%;
 			}
 
+
+		.image.left3 {
+			display: block;
+			float: left;
+			margin: 0 2em 2em 0;
+			position: relative;
+			top: 0.25em;
+		}
+
+			.image.left3 img {
+				display: block;
+				width: 10%;
+			}
+
 		.image.fit {
 			display: block;
 		}
@@ -2557,6 +2571,33 @@ input, select, textarea {
 			width: 30%;
 			margin: 0;
 		}
+
+
+
+	.box.post2 {
+		position: relative;
+		margin: 0 0 2em 0;
+	}
+
+		.box.post2:after {
+			content: '';
+			display: block;
+			clear: both;
+		}
+
+		.box.post2 .inner {
+			margin-left: calc(10% + 2em);
+		}
+
+			.box.post2 .inner > :last-child {
+				margin-bottom: 0;
+			}
+
+		.box.post2 .image {
+			width: 10%;
+			margin: 0;
+		}
+
 
 /* Header */
 
