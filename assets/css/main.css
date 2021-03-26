@@ -243,8 +243,7 @@ input, select, textarea {
 
 	.img2 {
 	    float: left;
-	    width:  100px;
-	    height: 150px;
+	    height: 50%;
 	    background-size: cover;
 	}
 
