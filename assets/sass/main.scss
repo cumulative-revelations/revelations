@@ -56,7 +56,7 @@
 	}
 
 	body {
-		line-height: 1;
+		line-height: 1.5;
 	}
 
 	ol, ul {
@@ -127,9 +127,7 @@
 	body, input, select, textarea {
 		color: _palette(fg);
 		font-family: 'Source Sans Pro', sans-serif;
-		font-size: 16pt;
 		font-weight: 300;
-		line-height: 1.65em;
 	}
 
 	a {
@@ -159,7 +157,6 @@
 	h1, h2, h3, h4, h5, h6 {
 		color: inherit;
 		font-weight: 600;
-		line-height: 1.75em;
 		margin-bottom: 1em;
 
 		a {
@@ -213,27 +210,27 @@
  */
 
 h1 {
-	font-size: 3.052rem;
+	font-size: 2.441em;
 }
 
 h2 {
-	font-size: 2.441rem;
+	font-size: 1.953em;
 }
 
 h3 {
-	font-size: 1.953rem;
+	font-size: 1.563em;
 }
 
 h4 {
-	font-size: 1.563rem;
+	font-size: 1.25em;
 }
 
 h5 {
-	font-size: 1.25rem;
+	font-size: 1em;
 }
 
 h6 {
-	font-size: 1rem;
+	font-size: 1em;
 }
 
 h1, h2, h3, h4 {
@@ -274,6 +271,12 @@ h1, h2, h3, h4 {
 
 	.container--prose {
 		max-width: 75ch;
+		font-size: 1.25em;
+
+		@include breakpoint('<=mobile') {
+			font-size: 1em;
+		}
+
 	}
 
 /* Row */
@@ -317,7 +320,6 @@ h1, h2, h3, h4 {
 	header {
 		p {
 			color: _palette(fg-light);
-			font-size: 1.25em;
 			position: relative;
 			margin-top: -1.25em;
 			margin-bottom: 2.25em;
@@ -327,17 +329,12 @@ h1, h2, h3, h4 {
 			text-align: center;
 			margin: 0 0 2em 0;
 
-			h2 {
-				font-size: 2.25em;
-			}
-
 			p {
 				position: relative;
 				border-top: solid 1px _palette(border);
 				padding: 1em 0 0 0;
 				margin: 0;
 				top: -1em;
-				font-size: 1.5em;
 				letter-spacing: -0.025em;
 			}
 		}
@@ -975,7 +972,6 @@ h1, h2, h3, h4 {
 			h2 {
 				display: inline-block;
 				margin: 0;
-				font-size: 1.25em;
 				vertical-align: middle;
 
 				em {
@@ -1098,8 +1094,7 @@ h1, h2, h3, h4 {
 		/* Basic */
 
 			body, input, select, textarea {
-				font-size: 14pt;
-				line-height: 1.5em;
+				line-height: 1.5;
 			}
 
 		/* Banner */
@@ -1117,7 +1112,6 @@ h1, h2, h3, h4 {
 		/* Basic */
 
 			body, input, select, textarea {
-				font-size: 13pt;
 				line-height: 1.5em;
 			}
 
@@ -1188,7 +1182,6 @@ h1, h2, h3, h4 {
 		/* Basic */
 
 			body, input, select, textarea {
-				font-size: 12pt;
 				line-height: 1.5em;
 			}
 
@@ -1206,10 +1199,6 @@ h1, h2, h3, h4 {
 
 			html, body {
 				overflow-x: hidden;
-			}
-
-			body, input, select, textarea {
-				font-size: 13pt;
 			}
 
 			h1, h2, h3, h4, h5, h6 {
@@ -1456,23 +1445,6 @@ h1, h2, h3, h4 {
 	@include breakpoint('<=mobile') {
 
 		/* Basic */
-
-			body, input, select, textarea {
-				font-size: 11pt;
-				line-height: 1.35em;
-			}
-
-			h2 {
-				font-size: 1.25em;
-				letter-spacing: 0;
-				line-height: 1.35em;
-			}
-
-			h3 {
-				font-size: 1em;
-				letter-spacing: 0;
-				line-height: 1.35em;
-			}
 
 			header {
 				p {
