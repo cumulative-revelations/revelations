@@ -2680,7 +2680,7 @@ button.small,
     width: 20%;
   }
   /* Header */
-  #header {
+  #header, #nav {
     display: none;
   }
   /* Banner */
