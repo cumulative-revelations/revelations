@@ -221,6 +221,10 @@ blockquote {
   }
 }
 
+.container--prose {
+  max-width: 75ch;
+}
+
 /* Row */
 .row {
   display: -webkit-box;
