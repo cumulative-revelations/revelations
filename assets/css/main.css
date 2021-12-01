@@ -2294,10 +2294,6 @@ button.small,
 }
 
 /* Box */
-.box.highlight {
-  text-align: center;
-}
-
 .box.post {
   position: relative;
   margin: 0 0 2em 0;
