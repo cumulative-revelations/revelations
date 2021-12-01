@@ -270,7 +270,7 @@ h1, h2, h3, h4 {
 	}
 
 	.container--prose {
-		max-width: 75ch;
+		max-width: 62ch;
 		font-size: 1.25em;
 
 		@include breakpoint('<=narrow') {
