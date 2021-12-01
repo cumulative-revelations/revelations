@@ -1601,3 +1601,24 @@ h1, h2, h3, h4 {
 	.people-group {
 		margin-bottom: 24px;
 	}
+
+
+	.square {
+		position: relative;
+
+		&:before {
+			content: "";
+			display: block;
+			padding-top: 100%;
+		}
+	}
+
+	.rounded {
+		border-radius: 100%;
+	}
+
+	.person-image {
+		box-shadow: inset 0 0 0 1px rgba(0,0,0,.1);
+		background-size: cover;
+		background-position: center center;
+	}
