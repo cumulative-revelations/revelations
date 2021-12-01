@@ -207,6 +207,35 @@
 		padding: 1em 0 1em 2em;
 	}
 
+/* Typography
+ * Using type scale of 1.25 (Major Third)
+ * Relevant Uri: https://type-scale.com
+ */
+
+h1 {
+	font-size: 3.052rem;
+}
+
+h2 {
+	font-size: 2.441rem;
+}
+
+h3 {
+	font-size: 1.953rem;
+}
+
+h4 {
+	font-size: 1.563rem;
+}
+
+h5 {
+	font-size: 1.25rem;
+}
+
+h6 {
+	font-size: 1rem;
+}
+
 /* Container */
 
 	.container {
@@ -780,7 +809,7 @@
 
 	#header {
 		text-align: center;
-		padding: 3em 0 0 0;
+		padding: 3rem 0 0 0;
 		background-color: #fff;
 		background-image:			url('images/bg02.png'),		url('images/bg02.png'),		url('images/bg01.png');
 		background-position:		top left,					top left,					top left;
@@ -788,11 +817,10 @@
 		background-repeat:			no-repeat,					no-repeat,					repeat;
 
 		h1 {
-			padding: 0 0 2.75em 0;
 			margin: 0;
+			padding-bottom: 3rem;
 
 			a {
-				font-size: 1.5em;
 				letter-spacing: -0.025em;
 				border: 0;
 			}
@@ -1112,10 +1140,10 @@
 		/* Header */
 
 			#header {
-				padding: 2em 0 0 0;
+				padding: 2rem 0 0 0;
 
 				h1 {
-					padding: 0 0 1.75em 0;
+					padding: 0 0 2rem 0;
 				}
 			}
 
