@@ -1567,3 +1567,23 @@ h1, h2, h3, h4 {
 			margin-bottom: 1em;
 		}
 	}
+
+	.media {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+
+		@include breakpoint('<=mobile') {
+			display: block;
+		}
+
+	}
+
+		.media__image {
+			margin-right: 24px;
+
+			@include breakpoint('<=mobile') {
+				margin-right: 0;
+			}
+
+		}

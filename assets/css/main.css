@@ -2975,4 +2975,32 @@ button.small,
 .fa-ul li {
   margin-bottom: 1em;
 }
+
+.media {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+@media screen and (max-width: 736px) {
+  .media {
+    display: block;
+  }
+}
+
+.media__image {
+  margin-right: 24px;
+}
+
+@media screen and (max-width: 736px) {
+  .media__image {
+    margin-right: 0;
+  }
+}
 /*# sourceMappingURL=main.css.map */
