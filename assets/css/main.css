@@ -255,6 +255,12 @@ h1, h2, h3, h4 {
   font-size: 1.25em;
 }
 
+@media screen and (max-width: 980px) {
+  .container--prose {
+    font-size: 1.125em;
+  }
+}
+
 @media screen and (max-width: 736px) {
   .container--prose {
     font-size: 1em;
@@ -2599,10 +2605,6 @@ button.small,
 
 /* Normal */
 @media screen and (max-width: 1280px) {
-  /* Basic */
-  body, input, select, textarea {
-    line-height: 1.5em;
-  }
   /* Lists */
   ol {
     padding-left: 1.25em;
@@ -2643,13 +2645,6 @@ button.small,
 }
 
 /* Narrow */
-@media screen and (max-width: 980px) {
-  /* Basic */
-  body, input, select, textarea {
-    line-height: 1.5em;
-  }
-}
-
 /* Narrower */
 #navPanel, #titleBar {
   display: none;
