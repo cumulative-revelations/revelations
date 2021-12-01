@@ -1579,6 +1579,10 @@ h1, h2, h3, h4 {
 
 	}
 
+	.media--centre {
+		align-items: center;
+	}
+
 		.media__image {
 			margin-right: 24px;
 
@@ -1587,3 +1591,13 @@ h1, h2, h3, h4 {
 			}
 
 		}
+
+		.media__content {
+			width: 100%;
+		}
+
+
+
+	.people-group {
+		margin-bottom: 24px;
+	}
