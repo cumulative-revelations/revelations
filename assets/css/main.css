@@ -2971,4 +2971,8 @@ button.small,
     text-align: left;
   }
 }
+
+.fa-ul li {
+  margin-bottom: 1em;
+}
 /*# sourceMappingURL=main.css.map */
