@@ -1833,6 +1833,8 @@ label {
 
 /* Image */
 .image {
+  max-width: 100%;
+  height: auto;
   border: 0;
   display: inline-block;
   position: relative;
@@ -2419,7 +2421,7 @@ button.small,
 
 /* Banner */
 #banner {
-  background-image: url("../../images/hacker.png");
+  background-image: url("../../images/puzzle2.jpg");
   background-position: center center;
   background-size: cover;
   height: 28em;
@@ -2464,7 +2466,7 @@ button.small,
 
 /* Wrapper */
 .wrapper {
-  padding: 5em 0 3em 0;
+  padding: 4em 0 3em 0;
 }
 
 .wrapper.style1 {
