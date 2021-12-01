@@ -2359,7 +2359,7 @@ button.small,
 #nav > ul > li {
   position: relative;
   display: inline-block;
-  margin-left: 1em;
+  padding: 0;
 }
 
 #nav > ul > li a {
@@ -2367,7 +2367,7 @@ button.small,
   text-decoration: none;
   border: 0;
   display: block;
-  padding: 1.5em 0.5em 1.35em 0.5em;
+  padding: 24px 24px;
 }
 
 #nav > ul > li:first-child {
@@ -2380,6 +2380,18 @@ button.small,
 
 #nav > ul > li.current {
   font-weight: 600;
+}
+
+#nav > ul > li.current:before {
+  content: "";
+  position: absolute;
+  bottom: 8px;
+  width: 6px;
+  height: 6px;
+  left: 50%;
+  margin-left: -3px;
+  border-radius: 6px;
+  background-color: #37c0fb;
 }
 
 #nav > ul > li.current a {
