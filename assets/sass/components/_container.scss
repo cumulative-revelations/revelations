@@ -4,4 +4,10 @@
     max-width: $max-container-width;
     padding-left: $layout-gutter-width;
     padding-right: $layout-gutter-width;
+
+    @include respond-to("md") {
+        padding-left: $layout-gutter-width * 2;
+        padding-right: $layout-gutter-width * 2;
+    }
+
 }

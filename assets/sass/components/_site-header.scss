@@ -11,5 +11,9 @@
     h1 {
         font-size: $subheading3-size;
         margin: 0;
+
+        @include respond-to("md") {
+            font-size: $subheading2-size;
+        }
     }
 }
