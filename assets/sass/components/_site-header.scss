@@ -18,11 +18,16 @@
         padding-top: $layout-gutter-width * 1.5;
     }
 
+    @include respond-to("xl") {
+        padding-top: $layout-gutter-width * 2;
+    }
+
 }
 
     .site-header__content {
+        position: relative;
         display: flex;
-        align-items: baseline;
+        align-items: center;
         justify-content: space-between;
     }
 
@@ -36,7 +41,22 @@
             margin: 0;
 
             @include respond-to("md") {
-                font-size: $subheading2-size;
+                font-size: $subheading3-size;
+                max-width: 260px;
             }
+
+            @include respond-to("lg") {
+                font-size: $subheading2-size;
+                max-width: none;
+            }
+        }
+    }
+
+    .site-header__navigation-toggle {
+        border: 0;
+        background-color: transparent;
+
+        @include respond-to("md") {
+            display: none;
         }
     }

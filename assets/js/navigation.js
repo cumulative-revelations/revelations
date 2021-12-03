@@ -17,4 +17,11 @@
         }
     }
 
+    const siteNavigation = document.querySelector(".site-navigation");
+    const siteNavButton = document.querySelector(".js-nav-toggle");
+
+    siteNavButton.addEventListener("click", function(ev){
+        siteNavigation.classList.toggle("is-shown");
+    });
+
 }());

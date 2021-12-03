@@ -1,36 +1,101 @@
 .site-navigation {
+    position: absolute;
+    display: none;
     font-size: $base-font-size;
+    top: 100%;
+    margin-top: 20px;
+    right: 0;
+    min-width: 240px;
+    background-color: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,.1), 0 0 0 1px rgba(0,0,0,.1);
+    border-radius: $base-radius-size;
+    padding-top: 4px;
+    padding-bottom: 4px;
+
+    &:before,
+    &:after {
+        position: absolute;
+        display: block;
+        content: "";
+        top: -10px;
+        right: 10px;
+        width: 20px;
+        height: 20px;
+        background-color: white;
+        transform: rotate(45deg);
+    }
+
+    &:before {
+        background-color: black;
+        opacity: .2;
+        top: -11px;
+    }
+
+    &.is-shown {
+        display: block;
+    }
+
+    @include respond-to("md") {
+        position: static;
+        display: block;
+        box-shadow: none;
+        background-color: transparent;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 0;
+
+        &:before,
+        &:after {
+            display: none;
+        }
+    }
 
     a {
         position: relative;
-        display: inline-block;
+        display: block;
         text-decoration: none;
         color: $base-font-colour;
+        padding: 8px 16px;
+        z-index: 2;
+
+        &:before {
+            position: absolute;
+            display: none;
+            content: "";
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background-color: $primary-accent-colour;
+        }
+
+        &.current {
+
+            color: $base-link-colour;
+            background-color: rgba($primary-accent-colour, .1);
+
+            &:before {
+                display: block;
+            }
+        }
 
         @include respond-to("md") {
+            display: inline-block;
             padding: 16px 0;
             margin-left: 16px;
 
-            &:before {
-                position: absolute;
-                display: none;
-                content: "";
-                bottom: 8px;
-                left: 0;
-                right: 0;
-                height: 2px;
-                background-color: $primary-accent-colour;
-            }
-    
             &.current {
-    
-                color: $base-link-colour;
-    
-                &:before {
-                    display: block;
-                }
+                background-color: transparent;
             }
-            
+
+            &:before {
+                width: auto;
+                right: 0;
+                top: auto;
+                height: 2px;
+                bottom: 8px;
+            }
+
         }
 
     }
