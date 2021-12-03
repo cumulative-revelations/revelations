@@ -343,25 +343,22 @@ h4,
     padding: 16px 0;
     margin-left: 16px;
   }
-}
-
-.site-navigation a:before {
-  position: absolute;
-  display: none;
-  content: "";
-  bottom: 0;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background-color: #25CCF7;
-}
-
-.site-navigation a.current {
-  color: #07a1c8;
-}
-
-.site-navigation a.current:before {
-  display: block;
+  .site-navigation a:before {
+    position: absolute;
+    display: none;
+    content: "";
+    bottom: 8px;
+    left: 0;
+    right: 0;
+    height: 2px;
+    background-color: #25CCF7;
+  }
+  .site-navigation a.current {
+    color: #07a1c8;
+  }
+  .site-navigation a.current:before {
+    display: block;
+  }
 }
 
 .site-header {
