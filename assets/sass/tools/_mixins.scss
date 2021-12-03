@@ -85,6 +85,13 @@
     }
 
     /**
+    * Sixths
+    */
+    .width-one-seventh#{$namespace} {
+        width: 14.2857%;
+    }
+
+    /**
     * Eighths
     */
     .width-one-eighth#{$namespace} {
