@@ -1,0 +1,38 @@
+.publication {
+    
+    @include respond-to("sm") {
+        display: flex;
+    }
+
+    @include respond-to("md") {
+        display: block;
+    }
+
+    @include respond-to("lg") {
+        display: flex;
+    }
+
+}
+
+.publication__image {
+    margin-bottom: $layout-gutter-width;
+
+    img {
+        max-width: 64px;
+        margin-right: $layout-gutter-width;
+
+        @include respond-to("md") {
+            max-width: 96px;
+        }
+    }
+}
+
+.publication__title {
+    font-size: $subheading3-size;
+}
+
+.publication__link {
+    display: inline-block;
+    margin-top: $layout-gutter-width;
+    margin-bottom: $layout-gutter-width;
+}
