@@ -2,12 +2,34 @@
     font-size: $base-font-size;
 
     a {
+        position: relative;
         display: inline-block;
         text-decoration: none;
         color: $base-font-colour;
 
         @include respond-to("md") {
-            padding: 16px 8px;
+            padding: 16px 0;
+            margin-left: 16px;
+        }
+
+        &:before {
+            position: absolute;
+            display: none;
+            content: "";
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 2px;
+            background-color: $primary-accent-colour;
+        }
+
+        .current {
+
+            color: $base-link-colour;
+
+            &:before {
+                display: block;
+            }
         }
 
     }
