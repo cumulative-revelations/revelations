@@ -966,6 +966,11 @@ h4,
   }
 }
 
+.site-footer {
+  background-color: #f7f8f9;
+  overflow: hidden;
+}
+
 .margin-bottom {
   margin-bottom: 24px;
 }
