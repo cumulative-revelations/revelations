@@ -2,9 +2,10 @@ html {
     min-height: 100%;
     font-size: $base-font-size;
     line-height: $base-line-height;
-    color: $base-font-colour;
     overflow-x: hidden;
     font-family: $sans-serif-font-stack;
+    background-color: $page-background-colour;
+    color: $base-font-colour;
 }
 
 p {

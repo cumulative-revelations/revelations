@@ -85,9 +85,10 @@ html {
   min-height: 100%;
   font-size: 16px;
   line-height: 1.5;
-  color: #57606f;
   overflow-x: hidden;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+  background-color: #f7f8f9;
+  color: #57606f;
 }
 
 p {
