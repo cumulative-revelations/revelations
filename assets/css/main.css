@@ -174,7 +174,7 @@ h4,
 .hero {
   width: 100%;
   max-width: none;
-  max-height: 400px;
+  height: 320px;
   -o-object-fit: cover;
      object-fit: cover;
   border-radius: 4px;
