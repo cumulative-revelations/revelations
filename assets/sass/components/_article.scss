@@ -19,4 +19,8 @@
         font-size: $subheading3-size;
     }
 
+    @include respond-to("lg") {
+        font-size: 1.25em;
+    }
+
 }

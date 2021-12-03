@@ -172,6 +172,12 @@ h4,
   font-size: 20px;
 }
 
+@media (min-width: 1024px) {
+  .article {
+    font-size: 1.25em;
+  }
+}
+
 .hero {
   width: 100%;
   max-width: none;
