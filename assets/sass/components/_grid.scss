@@ -15,6 +15,10 @@
 
 .grid--stack {
 
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+
     > .grid__item {
         margin-bottom: $layout-gutter-width;
 

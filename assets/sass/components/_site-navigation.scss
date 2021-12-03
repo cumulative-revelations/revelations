@@ -2,6 +2,13 @@
     font-size: $base-font-size;
 
     a {
+        display: inline-block;
         text-decoration: none;
+        color: $base-font-colour;
+
+        @include respond-to("md") {
+            padding: 16px 8px;
+        }
+
     }
 }

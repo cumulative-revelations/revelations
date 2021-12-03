@@ -12,11 +12,7 @@ body {
     padding-top: 64px;
 
     @include respond-to("md") {
-        padding-top: 80px;
-    }
-
-    @include respond-to("xl") {
-        padding-top: 96px;
+        padding-top: 0;
     }
 }
 
@@ -26,4 +22,10 @@ p {
     &:last-child {
         margin-bottom: 0;
     }
+}
+
+.base {
+    font-weight: normal;
+    font-size: $base-font-size;
+    color: $base-font-colour;
 }
