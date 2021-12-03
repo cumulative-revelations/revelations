@@ -12,6 +12,14 @@
         height: 400px;
     }
 
+    @include respond-to("lg") {
+        height: 480px;
+    }
+
+    @include respond-to("xl") {
+        height: 560px;
+    }
+
 }
 
 .hero__image {
