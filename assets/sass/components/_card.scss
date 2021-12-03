@@ -1,0 +1,27 @@
+
+
+    .card__title {
+        font-size: $base-font-size * $type-scale;
+        text-decoration: none;
+        color: $heading-font-colour;
+        line-height: 24px;
+    }
+
+    .card__subheading {
+        font-size: $base-font-size;
+        color: $base-font-colour;
+        line-height: 24px;
+        margin-bottom: 0;
+    }
+
+    .card__button {
+        border: 0;
+        display: inline-block;
+        text-decoration: none;
+        color: $base-font-colour;
+        background-color: #fff;
+        padding: 4px 12px;
+        box-shadow: 0 0 0 1px rgba(0,0,0,.2), 0 2px 4px rgba(0,0,0,.1);
+        border-radius: $base-radius-size;
+        font-size: $base-font-size;
+    }
