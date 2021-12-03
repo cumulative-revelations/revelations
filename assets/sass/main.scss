@@ -4,6 +4,9 @@
 @import "config/layout";
 @import "config/typography";
 
+// Tools (functions, mixins, etc.)
+@import "tools/mixins";
+
 // Base
 @import "base/reset";
 @import "base/page";
