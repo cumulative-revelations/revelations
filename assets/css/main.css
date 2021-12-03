@@ -194,6 +194,12 @@ h4,
   font-size: 20px;
 }
 
+@media (min-width: 768px) {
+  .article {
+    font-size: 1.125em;
+  }
+}
+
 @media (min-width: 1024px) {
   .article {
     font-size: 1.25em;
@@ -231,6 +237,10 @@ h4,
 
 .site-navigation {
   font-size: 16px;
+}
+
+.site-navigation a {
+  text-decoration: none;
 }
 
 .site-header__content {
