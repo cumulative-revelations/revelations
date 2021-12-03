@@ -827,6 +827,27 @@ h4,
   }
 }
 
+.card {
+  background-color: white;
+  border-radius: 4px;
+  padding: 24px;
+  -webkit-box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 2px 7px rgba(0, 0, 0, 0.1), 0 0 0 1px rgba(0, 0, 0, 0.05);
+}
+
+.card__title {
+  font-size: 16px;
+  font-weight: bold;
+  color: #2f3542;
+}
+
+.card__subheading {
+  font-size: 16px;
+  font-weight: bold;
+  color: #57606f;
+  margin: 0;
+}
+
 .grid {
   margin-left: -12px;
   margin-right: -12px;
@@ -914,5 +935,9 @@ h4,
   .site-header__logo h1 {
     font-size: 25px;
   }
+}
+
+.margin-bottom {
+  margin-bottom: 24px;
 }
 /*# sourceMappingURL=main.css.map */
