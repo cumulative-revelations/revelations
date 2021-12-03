@@ -1,0 +1,9 @@
+.grid {
+    margin-left: -$layout-gutter-width / 2;
+    margin-right: -$layout-gutter-width / 2;
+}
+
+    .grid__item {
+        padding-left: $layout-gutter-width / 2;
+        padding-right: $layout-gutter-width / 2;
+    }
