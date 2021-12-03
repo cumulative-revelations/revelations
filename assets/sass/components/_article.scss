@@ -1,0 +1,22 @@
+.article {
+    max-width: 65ch;
+    margin-left: auto;
+    margin-right: auto;
+
+    h1 {
+        font-size: $section-title-size;
+    }
+
+    h2 {
+        font-size: $subheading-size;
+    }
+
+    h3 {
+        font-size: $subheading2-size;
+    }
+
+    h4 {
+        font-size: $subheading3-size;
+    }
+
+}
