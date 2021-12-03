@@ -8,6 +8,18 @@ html {
     color: $base-font-colour;
 }
 
+body {
+    padding-top: 64px;
+
+    @include respond-to("md") {
+        padding-top: 80px;
+    }
+
+    @include respond-to("xl") {
+        padding-top: 96px;
+    }
+}
+
 p {
     margin-bottom: 1em;
 

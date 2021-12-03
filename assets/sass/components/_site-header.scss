@@ -1,19 +1,41 @@
-.site-header__content {
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
-    align-items: baseline;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: stretch;
+    background-color: #fff;
+    height: 64px;
+    box-shadow: 0 1px 0 rgba(0,0,0,.1);
+
+    @include respond-to("md") {
+        height: 80px;
+    }
+
+    @include respond-to("xl") {
+        height: 96px;
+    }
+
 }
 
-.site-header__logo {
+    .site-header__content {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+    }
 
-    text-decoration: none;
+    .site-header__logo {
 
-    h1 {
-        font-size: $subheading3-size;
-        margin: 0;
+        text-decoration: none;
 
-        @include respond-to("md") {
-            font-size: $subheading2-size;
+        h1 {
+            font-size: $base-font-size;
+            margin: 0;
+
+            @include respond-to("md") {
+                font-size: $subheading2-size;
+            }
         }
     }
-}

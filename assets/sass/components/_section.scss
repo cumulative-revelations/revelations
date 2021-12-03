@@ -8,7 +8,7 @@
     }
 
     @include respond-to("md") {
-        margin-top: $layout-gutter-width * 3;
-        margin-bottom: $layout-gutter-width * 3;
+        margin-top: $layout-gutter-width * 2.5;
+        margin-bottom: $layout-gutter-width * 2.5;
     }
 }
