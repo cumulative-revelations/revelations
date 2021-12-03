@@ -1,0 +1,24 @@
+h1, h2, h3, h4, h5, h6 {
+    color: $heading-font-colour;
+    line-height: $heading-line-height;
+}
+
+h1,
+.supertitle {
+    font-size: $big-title-size;
+}
+
+h2,
+.title {
+    font-size: $section-title-size;
+}
+
+h3,
+.subheading {
+    font-size: $subheading-size;
+}
+
+h4,
+.subheading-2 {
+    font-size: $subheading2-size;
+}
