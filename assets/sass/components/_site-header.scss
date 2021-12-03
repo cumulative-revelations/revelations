@@ -1,0 +1,14 @@
+.site-header__content {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+}
+
+.site-header__logo {
+
+    text-decoration: none;
+
+    h1 {
+        font-size: $subheading2-size;
+    }
+}
