@@ -10,22 +10,6 @@
         vertical-align: top;
         padding-left: $layout-gutter-width / 2;
         padding-right: $layout-gutter-width / 2;
-    }
-
-
-.grid--flex {
-    display: flex;
-    align-items: center;
-}
-
-
-.grid--stack {
-
-    display: flex;
-    flex-wrap: wrap;
-    align-items: stretch;
-
-    > .grid__item {
         margin-bottom: $layout-gutter-width;
 
         &:last-child {
@@ -33,4 +17,8 @@
         }
     }
 
+
+.grid--flex {
+    display: flex;
+    align-items: center;
 }
