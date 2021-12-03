@@ -19,9 +19,19 @@
 
     const siteNavigation = document.querySelector(".site-navigation");
     const siteNavButton = document.querySelector(".js-nav-toggle");
+    var clickInside = false;
 
     siteNavButton.addEventListener("click", function(ev){
         siteNavigation.classList.toggle("is-shown");
+        ev.stopPropagation();
+    });
+
+    siteNavigation.addEventListener("click", function(ev){
+        ev.stopPropagation();
+    });
+
+    window.addEventListener("click", function(ev){
+        siteNavigation.classList.remove("is-shown");
     });
 
 }());
