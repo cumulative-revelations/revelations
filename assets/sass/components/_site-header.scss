@@ -39,6 +39,7 @@
         h1 {
             font-size: $base-font-size;
             margin: 0;
+            letter-spacing: -0.02em;
 
             @include respond-to("md") {
                 font-size: $subheading3-size;
