@@ -3,8 +3,6 @@
     margin-left: -$layout-gutter-width;
     margin-right: -$layout-gutter-width;
 
-    margin-top: -$layout-gutter-width * 2;
-
     height: 240px;
 
     @include respond-to("md") {
