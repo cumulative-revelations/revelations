@@ -1,0 +1,12 @@
+
+@include setup-width-classes();
+
+@if variable-exists(breakpoint-widths) {
+
+    @each $breakpoint, $width in $breakpoint-widths {
+
+        @media screen and (min-width: $width) {
+            @include setup-width-classes("#{$breakpoint}");
+        }
+    }
+}

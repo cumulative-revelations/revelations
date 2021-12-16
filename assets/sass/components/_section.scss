@@ -1,0 +1,14 @@
+.section {
+    margin-top: $layout-gutter-width * 1.5;
+    margin-bottom: $layout-gutter-width * 1.5;
+
+    @include respond-to("sm") {
+        margin-top: $layout-gutter-width * 2;
+        margin-bottom: $layout-gutter-width * 2;
+    }
+
+    @include respond-to("md") {
+        margin-top: $layout-gutter-width * 2.5;
+        margin-bottom: $layout-gutter-width * 2.5;
+    }
+}

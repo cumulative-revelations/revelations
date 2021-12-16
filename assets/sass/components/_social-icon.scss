@@ -1,0 +1,40 @@
+.social-icon {
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    font-size: 0;
+    background-image: url(images/social-icon-sprite.svg);
+    background-position: 2px 0;
+    background-repeat: no-repeat;
+    margin-left: 4px;
+    margin-right: 4px;
+
+    &:active {
+        background-position: 2px -50px;
+    }
+
+}
+
+.social-icon--facebook {
+    background-position: -48px 0;
+
+    &:active {
+        background-position: -48px -50px;
+    }
+}
+
+.social-icon--instagram {
+    background-position: -98px 0;
+
+    &:active {
+        background-position: -98px -50px;
+    }
+}
+
+.social-icon--github {
+    background-position: -148px 0;
+
+    &:active {
+        background-position: -148px -50px;
+    }
+}

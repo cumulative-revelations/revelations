@@ -1,0 +1,63 @@
+.site-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    background-color: #fff;
+    height: 64px;
+    box-shadow: 0 1px 0 rgba(0,0,0,.1);
+
+    @include respond-to("md") {
+        position: static;
+        box-shadow: none;
+        background-color: transparent;
+        height: auto;
+        padding-top: $layout-gutter-width * 1.5;
+    }
+
+    @include respond-to("xl") {
+        padding-top: $layout-gutter-width * 2;
+    }
+
+}
+
+    .site-header__content {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .site-header__logo {
+
+        text-decoration: none;
+        color: $heading-font-colour;
+
+        h1 {
+            font-size: $base-font-size;
+            margin: 0;
+            letter-spacing: -0.02em;
+
+            @include respond-to("md") {
+                font-size: $subheading3-size;
+                max-width: 260px;
+            }
+
+            @include respond-to("lg") {
+                font-size: $subheading2-size;
+                max-width: none;
+            }
+        }
+    }
+
+    .site-header__navigation-toggle {
+        border: 0;
+        background-color: transparent;
+
+        @include respond-to("md") {
+            display: none;
+        }
+    }

@@ -1,0 +1,44 @@
+.biography {
+
+    @include respond-to("md") {
+        display: flex;
+    }
+
+    @include respond-to("lg") {
+        align-items: center;
+    }
+}
+
+.biography--group {
+    display: flex;
+    align-items: center;
+    margin-bottom: $layout-gutter-width * 1.5;
+    padding-bottom: $layout-gutter-width;
+    border-bottom: 1px solid #eee;
+
+    .biography__image {
+        width: 64px;
+    }
+
+    .biography__name {
+        font-size: $base-font-size * $type-scale;
+        margin: 0;
+    }
+
+}
+
+    .biography__image {
+        display: inline-block;
+        margin-right: $layout-gutter-width;
+        margin-bottom: $layout-gutter-width;
+        width: 96px;
+
+        @include respond-to("md") {
+            margin-bottom: 0;
+        }
+    }
+
+    .biography__name {
+        font-size: $base-font-size;
+        color: $heading-font-colour;
+    }

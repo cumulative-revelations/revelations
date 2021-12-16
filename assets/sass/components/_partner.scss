@@ -1,0 +1,11 @@
+.partner {
+    a {
+        color: $heading-font-colour;
+    }
+}
+
+.partner__name {
+    font-size: $base-font-size;
+    color: $heading-font-colour;
+    font-weight: bold;
+}

@@ -1,0 +1,31 @@
+html {
+    min-height: 100%;
+    font-size: $base-font-size;
+    line-height: $base-line-height;
+    overflow-x: hidden;
+    font-family: $sans-serif-font-stack;
+    background-color: $page-background-colour;
+    color: $base-font-colour;
+}
+
+body {
+    padding-top: 64px;
+
+    @include respond-to("md") {
+        padding-top: 0;
+    }
+}
+
+p {
+    margin-bottom: 1em;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.base {
+    font-weight: normal;
+    font-size: $base-font-size;
+    color: $base-font-colour;
+}

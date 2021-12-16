@@ -1,0 +1,33 @@
+.hero {
+    
+    margin-left: -$layout-gutter-width;
+    margin-right: -$layout-gutter-width;
+
+    height: 240px;
+
+    @include respond-to("md") {
+        margin: 0;
+        height: 280px;
+    }
+
+    @include respond-to("lg") {
+        height: 320px;
+    }
+
+    @include respond-to("xl") {
+        height: 360px;
+    }
+
+}
+
+.hero__image {
+    width: 100%;
+    height: 100%;
+    max-width: none;
+    object-fit: cover;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,.1);
+
+    @include respond-to("md") {
+        border-radius: $base-radius-size;
+    }
+}

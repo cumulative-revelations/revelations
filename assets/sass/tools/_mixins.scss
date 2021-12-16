@@ -1,0 +1,141 @@
+/// Mixin to manage responsive breakpoints
+/// @author Kitty Giraudel
+/// @param {String} $breakpoint-width - Breakpoint name
+/// @require $breakpoint-widths
+@mixin respond-to($breakpoint-width) {
+    // If the key exists in the map
+    @if map-has-key($breakpoint-widths, $breakpoint-width) {
+      // Prints a media query based on the value
+      @media (min-width: map-get($breakpoint-widths, $breakpoint-width)) {
+        @content;
+      }
+    }
+   
+    // If the key doesn't exist in the map
+    @else {
+      @warn "Unfortunately, no value could be retrieved from `#{$breakpoint-width}`. "
+          + "Available breakpoints are: #{map-keys($breakpoint-widths)}.";
+    }
+}
+
+@mixin setup-width-classes($namespace: '') {
+
+    @if ($namespace != "") {
+		$namespace: "\\@#{$namespace}";
+	}
+
+    /**
+    * Whole
+    */
+    .width-one-whole#{$namespace} {
+        width: 100%;
+    }
+
+    /**
+    * Halves
+    */
+    .width-one-half#{$namespace} {
+        width: 50%;
+    }
+
+    /**
+    * Thirds
+    */
+    .width-one-third#{$namespace} {
+        width: 33.333%;
+    }
+    .width-two-thirds#{$namespace} {
+        width: 66.666%;
+    }
+
+    /**
+    * Quarters
+    */
+    .width-one-quarter#{$namespace} {
+        width: 25%;
+    }
+    .width-three-quarters#{$namespace} {
+        width: 75%;
+    }
+
+    /**
+    * Fifths
+    */
+    .width-one-fifth#{$namespace} {
+        width: 20%;
+    }
+    .width-two-fifths#{$namespace} {
+        width: 40%;
+    }
+    .width-three-fifths#{$namespace} {
+        width: 60%;
+    }
+    .width-four-fifths#{$namespace} {
+        width: 80%;
+    }
+
+    /**
+    * Sixths
+    */
+    .width-one-sixth#{$namespace} {
+        width: 16.666%;
+    }
+    .width-five-sixths#{$namespace} {
+        width: 83.333%;
+    }
+
+    /**
+    * Sixths
+    */
+    .width-one-seventh#{$namespace} {
+        width: 14.2857%;
+    }
+
+    /**
+    * Eighths
+    */
+    .width-one-eighth#{$namespace} {
+        width: 12.5%;
+    }
+    .width-three-eighths#{$namespace} {
+        width: 37.5%;
+    }
+    .width-five-eighths#{$namespace} {
+        width: 62.5%;
+    }
+    .width-seven-eighths#{$namespace} {
+        width: 87.5%;
+    }
+
+    /**
+    * Tenths
+    */
+    .width-one-tenth#{$namespace} {
+        width: 10%;
+    }
+    .width-three-tenths#{$namespace} {
+        width: 30%;
+    }
+    .width-seven-tenths#{$namespace} {
+        width: 70%;
+    }
+    .width-nine-tenths#{$namespace} {
+        width: 90%;
+    }
+
+    /**
+    * Twelfths
+    */
+    .width-one-twelfth#{$namespace} {
+        width: 8.333%;
+    }
+    .width-five-twelfths#{$namespace} {
+        width: 41.666%
+    }
+    .width-seven-twelfths#{$namespace} {
+        width: 58.333%;
+    }
+    .width-eleven-twelfths#{$namespace} {
+        width: 91.666%;
+    }
+}
